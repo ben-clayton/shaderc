@@ -64,7 +64,7 @@ endif()
 
 if (NOT TARGET glslang)
   if (IS_DIRECTORY ${SHADERC_GLSLANG_DIR})
-    set(GLSLANG_BUILD_PIC 1)
+    set(GLSLANG_BUILD_PIC 0)
     add_subdirectory(${SHADERC_GLSLANG_DIR} glslang)
   endif()
   if (NOT TARGET glslang)
